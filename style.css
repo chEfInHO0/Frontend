@@ -178,6 +178,10 @@ footer{
     body{
         font-size: 12px;
     }
+    header h1,
+    footer p{
+        margin-left: 10px;
+    }
     #about .container{
         display: block;
     }
@@ -188,6 +192,10 @@ footer{
         margin-bottom: 22px;
     }
     .store-img{
-        width: 100%;
+        width: 95%;
+    }
+    .bt{
+        width: 30px;
+        height: 30px;
     }
   }
