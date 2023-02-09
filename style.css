@@ -1,174 +1,157 @@
+/* Reset */
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-header,
-section h2,
-section h3,
-form button{
-    font-family: 'Bungee', cursive;
-    font-weight: normal;
-}
-
-body, input, textarea{
-    font-family: 'Roboto', sans-serif;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    background-color: #182C61;
-    color: #ecf0f1;
-    padding: 16px 0;
-}
-
-section h2{
-    margin: 16px;
-}
-
-section{
-    color: #182C61;
-}
-
-header li {
+/* Posicionamento de Elementos */
+header li{
     display: inline;
-    margin:10px;
-    
+    margin-left: 10px;
 }
 
-header li a{
-    text-decoration: none;
-    color: #ecf0f1;
+header .container { 
+    display: flex;
+    justify-content: space-between;
 }
 
 .container{
-    max-width: 1280px;
-    width: 100%;
+    width: 1366px;
     margin: 0 auto;
 }
 
-header .container,
-section .container{
+.articles{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.brand-list li img
-{
-    height: 24px;
+.articles article {
+    width: 30%;
+    margin: 15px 0px;
 }
 
-.brand-list li
-{
-    display: inline;
+.articles article img {
+    width: 100%;
 }
 
-section .container{
-    align-items: flex-start;
-}
-
-section{
-    padding: 24px;
-}
-
-section p{
-    margin:8px;
-}
-
-#about img {
-    margin: 0 16px;
-}
-
-#contact .container {
-    display: block;
-}
-
-form input,
-form textarea,
-form button{
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
-
-.contact-methods{
+#economy article,
+#tech article,
+#fun article {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.social-links img {
-    height: 24px;
+/* Estilização de Elementos */
+
+body > header{
+    background-color: #2f372f;
+    padding: 15px;
 }
 
-.social-links li {
-    display: inline;
-    margin-right: 10px;
+h1{
+    font-size: 42px;
 }
 
-form textarea{
-    resize: none;
+h2{
+    font-size: 36px;
 }
 
-section h3 {
-    margin-bottom: 16px;
+h3{
+    font-size: 26px;
 }
 
-form button{
-    background-color: #182C61;
-    color: #ecf0f1;
-    border: none;
-    transition: 0.4s linear;
-}
-
-form button:hover{
-    background-color: #3653a3;
-    cursor: pointer;
-}
-
-input:focus,
-textarea:focus{
-    outline-color: #182C61;
-}
-
-footer{
-    background-color: #182C61;
-    color: #ecf0f1;
-    padding: 16px 0;
-}
-
-.bt{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #3653a3;
-    border: 1px solid #ecf0f1;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+a{
+    width: 80px;
+    background-color: blue;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
     transition: 0.1s linear;
+    padding: 10px;
 }
 
-.show{
-    opacity: 1;
+a:hover{
+    background-color: lightblue;
+    color: #000;
+}
+
+body > header a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0px;
+}
+#sports a{
+    background-color: lightgreen;
+    color: #000;
+}
+
+#sports a:hover{
+    background-color: rgb(75, 126, 75);
+    color: #000;
     cursor: pointer;
+    
 }
 
-.hide{
-    opacity: 0;
-    background-color: transparent;
+#sports{
+    background-color: rgba(0, 255, 0, 0.1);
 }
 
-/*Debugger class*/
+#economy a{
+    background-color: rgba(255, 255, 0, 0.4);
+    color: #000;
+}
 
-.tester{
-    border: 3px solid black;
+#economy a:hover{
+    background-color: rgba(190, 190, 74, 0.8);
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#economy{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+#tech a{
+    background-color: rgb(255, 185, 158);
+    color: #000;
+}
+
+#tech a:hover{
+    background-color:orange;
+    color: #000;
+    cursor: pointer;
+    
+}
+
+#tech{
+    background-color: rgba(255, 166, 0, 0.281);
+}
+
+#fun a{
+    background-color: rgb(194, 44, 194,0.4);
+    color: #fff;
+}
+
+#fun a:hover{
+    background-color:rgb(109, 15, 109,0.5);
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+#fun{
+    background-color: rgb(141, 75, 141,0.5);
 }
